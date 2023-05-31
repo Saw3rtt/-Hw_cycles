@@ -32,8 +32,34 @@ public class Main {
         }
         System.out.println();
         //task7
-        for(int i = 1; i <= 512; i = i * 2){
+        for (int i = 1; i <= 512; i = i * 2) {
             System.out.println(i);
         }
+        System.out.println();
+        //task8
+        int money = 29000;
+        int accumulation = 0;
+        for (int i = 1; i <= 12; i++) {
+            accumulation = money + accumulation;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + accumulation + " рублей");
+        }
+        System.out.println();
+        //task9
+        int money1 = 29000;
+        int accumulation2 = 0;
+        for (int i = 1; i <= 12; i++) {
+            accumulation2 = accumulation2 + accumulation2/100;
+            accumulation2 = accumulation2 + money1;
+            System.out.println("Месяц " + i + ",сумма накоплений равна " + accumulation2 + " рублей");
+        }
+        System.out.println();
+        //task10
+        int multiplicationTable = 2;
+        int result;
+        for (int i = 1; i <= 10; i++) {
+            result = multiplicationTable * i;
+            System.out.println(multiplicationTable + " * " +  i +  " = " + result);
+        }
+
     }
 }
